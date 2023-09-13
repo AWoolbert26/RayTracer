@@ -12,11 +12,11 @@ class Ray {
     Point origin;
     Vec direction;
 
-//  Initializers
+    //  Initializers
     Ray();
     Ray(Point &origin, Vec &direction);
 
-//  Determines a point along a ray given the ray's origin, direction, and distance in that direction
+    //  Determines a point along a ray given the ray's origin, direction, and distance in that direction
     Point pointAlongRay(double t) {
         return origin + (direction * t);
     }

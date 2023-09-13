@@ -10,10 +10,8 @@
 using namespace std;
 
 class Color {
-
-    double r, g, b, brightness;
-
     public:
+    double r, g, b, brightness;
 
     //  Initializers
     Color();
@@ -31,6 +29,10 @@ class Color {
     }
     double getBrightness() {
         return brightness;
+    }
+
+    void print() {
+        std::cout<<r<<" "<<g<<" "<<b<<std::endl;
     }
 
     string ppmOutput() {

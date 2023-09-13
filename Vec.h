@@ -7,26 +7,25 @@
 #include <cmath>
 #include <iostream>
 
-
 class Vec {
     public:
     double x, y, z;
 
-//  Initializers
+    //  Initializers
     Vec();
     Vec(double, double, double);
 
-//  Basic get functions
+    //  Basic get functions
     double getX() {return x;}
     double getY() {return y;}
     double getZ() {return z;}
 
-//  Basic vector operations
+    //  Basic vector operations
     Vec operator+(Vec u) {
-        return Vec(x + u.getX(), x + u.getY(), x + u.getZ());
+        return Vec(x + u.getX(), y + u.getY(), z + u.getZ());
     }
     Vec operator-(Vec u) {
-        return Vec(x - u.getX(), x - u.getY(), x - u.getZ());
+        return Vec(x - u.getX(), y - u.getY(), z - u.getZ());
     }
     Vec operator*(double t) {
         return Vec(x * t, y * t, z * t);
@@ -35,7 +34,7 @@ class Vec {
         return *this * (1 / t);
     }
 
-//  Additional vector operations
+    //  Additional vector operations
     Vec negate() {
         return Vec(-x, -y, -z);
     }

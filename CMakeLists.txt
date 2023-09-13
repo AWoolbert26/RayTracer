@@ -9,4 +9,6 @@ add_executable(RayTracer main.cpp
         Ray.h
         Sphere.h
         Camera.h
+        Hitable.h
+        HitableList.h
 )
