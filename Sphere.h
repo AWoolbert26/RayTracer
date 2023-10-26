@@ -49,10 +49,12 @@ class Sphere : public Hitable {
         hit.hit_color = color;
         hit.set_normal(r, hit_normal);
 
+        if (hit.dist_along_ray == 0) {
+            return false;
+        }
+
         return true;
     }
-
-
 };
 
 Sphere::Sphere() {

@@ -11,4 +11,5 @@ add_executable(RayTracer main.cpp
         Camera.h
         Hitable.h
         HitableList.h
+        LightSource.h
 )

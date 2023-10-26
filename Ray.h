@@ -20,6 +20,9 @@ class Ray {
     Point pointAlongRay(double t) {
         return origin + (direction * t);
     }
+    double length() {
+        return direction.length();
+    }
 
 };
 
